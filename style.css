@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x:hidden ;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+#home{
+    height: 100vh; 
+    background-color: #0d4901;
+}
+#home .navbar {
+    width: 100%;
+    padding: 1.5rem 2rem;
+}
+#home .navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+#home .navbar nav img{
+    max-width: 100px;
+}
+#home .navbar nav ul {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+#home .navbar nav ul a {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    font-weight: 600;
+    color: #fff;
+}
+#home .content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 2rem 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.content-text h1{
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+.content-text span{
+    font-size: 70px;
+    color: #fff;
+}
+.content-text p{
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.content-text .btn-primary{
+    margin: 20px;
+    padding: 15px 10px;
+    border-radius: 15px;
+    background-color: #157901;
+    color: #fff;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    transition: all 0.3 ease;
+}
+.content-text a:hover{
+    background-color: #198504;
+}
+.content  img {
+    margin-left: 5rem;
+    width: 400px;
+    animation: animation1 1s ease-out;
+}
+.content .social {
+    align-items: center;
+}
+.content .social a i{
+    margin: 10px 0;
+    display: flex;
+    color: #fff;
+    font-size: 25px;
+    transition: all 0.3s ease;
+    flex-direction: row;
+    animation: animation1 1s ease-out;
+}
+.content .social a i:hover {
+    transform: scale(0.85);
+
+}
+.btn-types{
+    display: block;
+    width: 200px;
+    margin: auto;
+    animation: animation2 1s ease-out;
+
+}
+@keyframes animation1 {
+    0% {
+        transform: translatex(500px)
+    }
+    100% {
+        transform: translatex(0)
+    }
+}
+@keyframes animation2 {
+    0% {
+        transform: translatey(200px)
+    }
+    100% {
+        transform: translatey(0)
+    }
+}
